@@ -5,7 +5,8 @@ import java.util.Arrays;
 public class ArrayDemo2
 {
     public static void main(String[] args) {
-        int[] marks = new int[] {95, 25, 65, 75, 68, 67, 52, 48};
+        //int[] marks = new int[] {95, 25, 65, 75, 68, 67, 52, 48};
+        int[] marks =  {95, 25, 65, 75, 68, 67, 52, 48};
 
         for(int i = 0; i < marks.length; i++)
         {
