@@ -8,6 +8,7 @@ public class Client {
 
         Circle c1 = new Circle(8);
         c1.calculateArea();
+        c1.print();
 
         s1 = new Triangle(5, 6);
         s1.calculateArea();
@@ -15,5 +16,9 @@ public class Client {
         s1.sayHello();
 
         c1.sayHello();
+
+        //Printable p1 = new Printable();
+        Printable p1 = new Triangle(5, 7);
+        p1.print();
     }
 }

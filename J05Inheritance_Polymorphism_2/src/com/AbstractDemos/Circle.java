@@ -1,6 +1,6 @@
 package com.AbstractDemos;
 
-public class Circle extends Shape
+public class Circle extends Shape implements Printable
 {
     int rd;
 
@@ -12,5 +12,9 @@ public class Circle extends Shape
     public void calculateArea() {
         double area = 3.142 * rd * rd;
         System.out.println("Area of Circle: " + area);
+    }
+    public void print()
+    {
+        System.out.println("This is Circle Class!!!");
     }
 }
