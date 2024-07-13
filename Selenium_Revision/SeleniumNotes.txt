@@ -1,0 +1,87 @@
+1. Launching the browser => Create an object of WebDriver interface
+2. get() => Launch the url
+3. getTitle() => Return the title of page (String)
+4. getCurrentUrl() => Return url of the page (String)
+5. getPageSource() => Returns the rendered html of page (String)
+6. close() => Close the browser which is opened by WebDriver object. 
+7. findElement() => Reads/Finds the control / WebElement on the page. Locates for 1st occurance (WebElement)
+8. findElements() => Read multiple controls on the web page. (List<WebElement>)
+
+
+=============================
+Locator
+=============================
+Are the way to read any control / WebElement on the page
+
+1. Name
+2. Id
+3. ClassName
+4. CssSelector
+5. Xpath
+6. LinkText
+7. PartialLinkText
+8. TagName
+
+RelativeLocator
+
+
+
+
+=====================================
+WebElement interface
+=====================================
+It is an interface that refers to any control on the pag
+
+Method
+1. sendKeys() => Enter some text in the textbox. Will append the text.
+2. click() => Will click on the control
+3. getText() => Return the text on the control. (String)
+4. submit() => Submits the form (Clicks on the button if the button is having type = "submit" attribute)
+
+
+
+===================================
+CssSelector
+===================================
+With the help of this locator, you can locate any control using any one of the attribute of control.
+
+1. Single Attribute
+	tagName[attribute = "value"]
+	input[placeholder="Email address or phone number"]
+
+2. Multiple Attribute
+	tagName[attribute1 = "value"][attribute2 = "value"]
+
+
+3. Special Characters
+	a. ^ - Starts With
+	b. $ - Ends With
+	c. * - Contains
+
+
+====================================
+XPath
+====================================
+XPath -> XML Path
+
+Ichalkaranji Bus Stand -> Shahu Putala -> 3 Batti (4 Rasta) Chouk -> Chandur Road -> Sarvesh's Home 
+
+1. Absolute XPath
+	Starts with html
+
+2. Relative XPath
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
