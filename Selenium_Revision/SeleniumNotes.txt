@@ -37,6 +37,10 @@ Method
 2. click() => Will click on the control
 3. getText() => Return the text on the control. (String)
 4. submit() => Submits the form (Clicks on the button if the button is having type = "submit" attribute)
+5. isSelected() => Check whether the control (Checkbox / Radio button) is selected or not. (boolean)
+6. isEnabled() => Checks that whether the control is enabled or disabled. (boolean)
+7. isDisplayed() => Checks that whether the control is visible or not (boolean)
+
 
 
 
@@ -72,9 +76,40 @@ Ichalkaranji Bus Stand -> Shahu Putala -> 3 Batti (4 Rasta) Chouk -> Chandur Roa
 2. Relative XPath
 
 
+=================================
+Handling Dropdownlist
+=================================
+If the control is having <select> tag, then only we are considiring it as dropdownlist
 
+Select class is used to handle such a dropdown list
 
+1. Display selected country
+2. Display total no of countries
+3. Display list of all the countries
+4. Select USA
+5. Display selected country
 
+Method
+1. getFirstSelectedOption() => Returns the selected item/element (WebElement)
+2. getOptions() => Returns list of all the elements from the dropdown list (List<WebElement>)
+3. selectByVisibleText() =>
+4. selectByValue() =>
+5. selectByIndex() => 
+
+==============================
+Synchronization
+==============================
+Process of adjusting speed of tool with speed of application
+
+1. Thread.Sleep()
+	a. Applicable to Single statement only
+	b. Takes mandatory delay
+2. ImplicitWait
+	a. Applicable throughout a script
+	b. It dosent take mandatory delay
+3. ExplicitWait
+4. FluentWait
+5. PageLoadTimeout
 
 
 
