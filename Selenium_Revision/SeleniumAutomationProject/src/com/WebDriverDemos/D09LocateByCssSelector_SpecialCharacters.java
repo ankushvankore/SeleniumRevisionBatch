@@ -6,6 +6,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.time.Duration;
+
 public class D09LocateByCssSelector_SpecialCharacters
 {
     public static void main(String[] args) {
@@ -13,6 +15,7 @@ public class D09LocateByCssSelector_SpecialCharacters
         driver.manage().window().maximize();
 
         driver.get("https://www.facebook.com/");
+        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
 
         //WebElement userName = driver.findElement(By.cssSelector("input[placeholder*=\"address\"]"));
         WebElement userName = driver.findElement(By.cssSelector("#email"));

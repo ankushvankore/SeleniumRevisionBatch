@@ -107,9 +107,102 @@ Process of adjusting speed of tool with speed of application
 2. ImplicitWait
 	a. Applicable throughout a script
 	b. It dosent take mandatory delay
-3. ExplicitWait
+3. ExplicitWait (WebDriverWait class)
+	a. Applicable to Single statement only
+	b. It dosent take mandatory delay
 4. FluentWait
+	a. Applicable to Single statement only
+	b. It dosent take mandatory delay
+	c. It can manage the exception
+
+	w withTimeout
+	i ignoring
+	p pollingEvery
+	u until
 5. PageLoadTimeout
+
+================================
+Handling Table
+================================
+1. Display all table headers
+2. Display total no of rows
+3. Display any row randomly
+
+
+================================
+Handling Javascript Alerts
+================================
+Alert interface is used to handle alerts
+
+Methods
+1. driver.switchTo().alert() --> Take you on the alert
+2. getText() --> Return the text on the alert
+3. accept() --> Will click on Ok button
+4. dismiss() --> Will click on Cancel button
+5. sendKeys() --> Will enter the text on Prompt box (Alert)
+ 
+
+================================
+Mouse Actions
+================================
+
+Actrions Class is used to handle mouse actions such as
+
+1. Left Click (Click)
+2. Right click
+3. Hover			(moveToElement())
+4. Drag and Drop
+5. Double Click			(doubleClick())
+
+================================
+TestNG
+================================
+Open source test automation framework
+
+Framework --> Set of rules, guidelines for automation.
+
+Inspired with JUnit & NUnit
+
+NG --> Next Generation
+
+Advantages
+
+1. Annotations
+	@Test, @BeforeTest, @AfterTest, @BeforeMethod, @AfterMethod, @DataPrivider, @Parameters, 
+2. Set the priorities for the test case
+3. Execute / Skip single test case / multiple test cases
+4. Data driven testing
+5. Automated reports
+	a. Normal report
+	b. HTML Report
+6. Create and execute group of test case.
+7. Parameterization
+8. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
