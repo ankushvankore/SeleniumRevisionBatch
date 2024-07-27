@@ -1,0 +1,11 @@
+<suite name = "My Suite">
+    <test name = "My Test">
+        <classes>
+            <class name ="com.TestNGDemo.D05AmazonAssignment">
+                <methods>
+                    <exclude name="clickElectronics"></exclude>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

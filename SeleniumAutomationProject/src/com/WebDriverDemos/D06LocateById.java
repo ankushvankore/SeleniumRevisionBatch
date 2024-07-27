@@ -14,7 +14,7 @@ public class D06LocateById
         driver.get("https://www.facebook.com/");
 
         WebElement emailId = driver.findElement(By.id("email"));
-        emailId.sendKeys("ankushvankore@gmail.com");Creat
+        emailId.sendKeys("ankushvankore@gmail.com");
         WebElement password = driver.findElement(By.id("pass"));
         password.sendKeys("123456");
         WebElement loginBtn = driver.findElement(By.name("login"));

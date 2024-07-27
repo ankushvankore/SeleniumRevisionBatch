@@ -1,0 +1,12 @@
+<suite name = "My Suite">
+    <test name = "My Test">
+        <classes>
+            <class name ="com.TestNGDemo.D05AmazonAssignment">
+                <methods>
+                    <include name = "clickSell"></include>
+                    <include name="clickElectronics"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

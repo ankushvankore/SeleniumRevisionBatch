@@ -1,0 +1,10 @@
+<suite name = "My Suite">
+    <test name = "My Test">
+        <classes>
+            <class name ="com.TestNGDemo.D05AmazonAssignment">
+            </class>
+            <class name ="com.TestNGDemo.D05AmazonAssignment">
+            </class>
+        </classes>
+    </test>
+</suite>
