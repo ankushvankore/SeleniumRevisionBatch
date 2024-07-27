@@ -1,0 +1,17 @@
+<suite name = "My Suite">
+    <test name = "My Test">
+        <parameters>
+            <parameter name = "fName" value = "Vaishali"></parameter>
+            <parameter name = "lName" value="Gurav"></parameter>
+            <parameter name = "eMail" value="vaishali@gmail.com"></parameter>
+            <parameter name = "age" value="30"></parameter>
+            <parameter name = "salary" value="100000"></parameter>
+            <parameter name = "department" value="Testing"></parameter>
+        </parameters>
+        <classes>
+            <class name ="com.TestNGDemo.D08Parameterization">
+
+            </class>
+        </classes>
+    </test>
+</suite>

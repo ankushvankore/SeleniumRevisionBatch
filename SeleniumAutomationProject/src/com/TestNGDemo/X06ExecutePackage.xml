@@ -1,0 +1,7 @@
+<suite name = "MySuite">
+    <test name = "MyTest">
+        <packages>
+            <package name = "com.TestNGDemo"></package>
+        </packages>
+    </test>
+</suite>

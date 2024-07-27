@@ -11,46 +11,46 @@ public class D05AmazonAssignment
 {
     WebDriver driver;
 
-    @BeforeTest
+    @BeforeTest (alwaysRun = true)
     public void openBrowser()
     {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
-    @AfterTest
+    @AfterTest(alwaysRun = true)
     public void closeBrowser()
     {
         driver.close();
     }
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void openAmazon()
     {
         driver.get("https://www.amazon.in");
         System.out.println("Amazon Title: " + driver.getTitle());
     }
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     public void printTitle()
     {
         System.out.println("Title: " + driver.getTitle());
     }
 
-    @Test (priority = 1)
+    @Test (priority = 1, groups = "sell")
     public void clickSell()
     {
         driver.findElement(By.partialLinkText("Sell")).click();
     }
-    @Test (priority = 2)
+    @Test (priority = 2, groups = "sell")
     public void clickBestSeller()
     {
         driver.findElement(By.partialLinkText("Best")).click();
     }
-    @Test (priority = 3)
+    @Test (priority = 3, groups = "gadgets")
     public void clickMobiles()
     {
         driver.findElement(By.partialLinkText("Mobile")).click();
     }
-    @Test (priority = 4)
+    @Test (priority = 4, groups = "gadgets")
     public void clickElectronics()
     {
         driver.findElement(By.partialLinkText("Electronics")).click();

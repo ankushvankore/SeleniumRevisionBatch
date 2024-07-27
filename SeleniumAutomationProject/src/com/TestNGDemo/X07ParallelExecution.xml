@@ -1,0 +1,9 @@
+<suite name = "MySuite" parallel = "methods" thread-count = "2">
+    <test name = "MyTest">
+        <classes>
+            <class name = "com.TestNGDemo.D02MultipleTests">
+
+            </class>
+        </classes>
+    </test>
+</suite>
